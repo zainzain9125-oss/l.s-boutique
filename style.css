@@ -4,8 +4,10 @@
     box-sizing: border-box;
 }
 
-body {
-    background: linear-gradient(135deg, #f093fb, #f5576c, #4facfe, #00f2fe);
+    body {
+    min-height: 100vh;
+    margin: 0;
+    background: linear-gradient(to right, lightblue, lightpink);
     background-attachment: fixed;
     font-family: 'Segoe UI', Arial, sans-serif;
     font-size: 18px;
@@ -146,6 +148,18 @@ footer {
         width: 90%;
         max-width: 300px;
     }
+}
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 15px;
+}
+section a {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 
