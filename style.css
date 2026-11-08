@@ -1,9 +1,9 @@
- {
+{
     box-sizing: border-box;
 }
 
 body {
-    background: linear-gradient(to right, lightblue, lightpink);
+    background: linear-gradient(135deg, lightblue, lightpink);
     background-attachment: fixed;
     font-family: Arial, sans-serif;
     font-size: 18px;
@@ -15,16 +15,17 @@ header {
     background-color: darkblue;
     color: white;
     text-align: center;
-    padding: 25px;
+    padding: 30px;
 }
 
 header h1 {
-    font-size: 40px;
+    font-size: 45px;
     margin: 10px;
 }
 
 header p {
-    font-size: 20px;
+    font-size: 22px;
+    margin: 10px;
 }
 
 nav {
@@ -33,7 +34,7 @@ nav {
     align-items: center;
     flex-wrap: wrap;
     gap: 30px;
-    padding: 20px;
+    padding: 22px;
     background-color: navy;
 }
 
@@ -51,9 +52,9 @@ nav a:hover {
 section {
     background-color: white;
     width: 90%;
-    max-width: 900px;
-    margin: 30px auto;
-    padding: 30px;
+    max-width: 1100px;
+    margin: 45px auto;
+    padding: 40px;
     border-radius: 15px;
     box-shadow: 0 4px 10px gray;
     text-align: center;
@@ -61,42 +62,162 @@ section {
 
 section h2 {
     color: darkblue;
-    font-size: 30px;
+    font-size: 36px;
+    margin-bottom: 25px;
 }
+
+section p {
+    font-size: 20px;
+    line-height: 1.8;
+}
+
+.home-section {
+    min-height: 480px;
+    padding: 70px 40px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-section h2 {
+    font-size: 42px;
+}
+
+.home-section p {
+    font-size: 22px;
+}
+
+/* EXPLORE BUTTON */
+
+.explore-btn {
+    display: inline-block;
+    background-color: darkblue;
+    color: white;
+    text-decoration: none;
+    padding: 18px 35px;
+    margin-top: 25px;
+    border-radius: 8px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.explore-btn:hover {
+    background-color: deeppink;
+}
+
+.collection-section {
+    text-align: center;
+}
+
 .product {
     display: inline-block;
     vertical-align: top;
-    text-align: center;
+    width: 30%;
+    margin: 15px 1%;
+    padding: 15px;
+    background-color: #f5f5f5;
+    border-radius: 12px;
 }
 
 .product img {
     display: block;
     width: 100%;
-    max-width: 300px;
     height: 300px;
     object-fit: cover;
+    border-radius: 10px;
     margin: 0 auto;
+}
+
+.product h3 {
+    color: darkblue;
+    font-size: 24px;
+}
+
+.product p {
+    font-size: 20px;
 }
 
 .product:hover {
     transform: scale(1.03);
 }
 
-section a {
-    display: inline-block;
-    background-color: darkblue;
-    color: white;
-    text-decoration: none;
-    padding: 15px 30px;
-    margin-top: 15px;
-    border-radius: 8px;
-    font-size: 20px;
-    font-weight: bold;
+.about-section {
+    min-height: 400px;
+    padding: 50px;
 }
 
-section a:hover {
+.about-section h2 {
+    font-size: 38px;
+}
+
+.about-section p {
+    font-size: 21px;
+    line-height: 1.9;
+    text-align: justify;
+}
+
+.contact-section {
+    max-width: 800px;
+    padding: 45px;
+}
+
+.contact-section h2 {
+    font-size: 38px;
+}
+
+.contact-section p {
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+/* CONTACT LINKS */
+
+.contact-section a {
+    color: darkblue;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.contact-section a:hover {
+    color: deeppink;
+}
+
+
+
+.contact-section input,
+.contact-section textarea {
+    width: 100%;
+    padding: 15px;
+    margin: 12px 0;
+    border: 1px solid gray;
+    border-radius: 8px;
+    font-size: 17px;
+}
+
+.contact-section textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+.contact-section button {
+    background-color: darkblue;
+    color: white;
+    padding: 15px 35px;
+    border: none;
+    border-radius: 8px;
+    font-size: 19px;
+    cursor: pointer;
+}
+
+.contact-section button:hover {
     background-color: deeppink;
 }
+
+/* =========================
+   FOOTER
+========================= */
 
 footer {
     background-color: darkblue;
@@ -106,14 +227,20 @@ footer {
     margin-top: 30px;
 }
 
+
 @media (max-width: 768px) {
 
     header h1 {
-        font-size: 30px;
+        font-size: 32px;
+    }
+
+    header p {
+        font-size: 18px;
     }
 
     nav {
         gap: 15px;
+        padding: 15px;
     }
 
     nav a {
@@ -122,15 +249,49 @@ footer {
 
     section {
         width: 92%;
-        padding: 20px;
+        padding: 25px 20px;
+    }
+
+    section h2 {
+        font-size: 28px;
+    }
+
+    section p {
+        font-size: 18px;
+    }
+
+    .home-section {
+        min-height: 400px;
+        padding: 40px 20px;
+    }
+
+    .home-section h2 {
+        font-size: 30px;
+    }
+
+    .home-section p {
+        font-size: 18px;
+    }
+
+    .explore-btn {
+        font-size: 18px;
     }
 
     .product {
         width: 100%;
-        margin: 10px 0;
+        margin: 15px 0;
     }
 
     .product img {
         height: auto;
+        max-height: 350px;
+    }
+
+    .about-section p {
+        text-align: left;
+    }
+
+    .contact-section {
+        padding: 25px 20px;
     }
 }
